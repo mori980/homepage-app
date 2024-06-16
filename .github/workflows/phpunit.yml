@@ -11,13 +11,13 @@ env:
 jobs:
   phpunit:
 
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     services:
      mysql.test:
        image: 'mysql/mysql-server:8.0'
        ports:
-         -3306:3306
+         - 3306:3306
        env:
          MYSQL_DATEBASE: 'example_app'
          MYSQL_USER: ${{ env.DB_PASSWORD }}
