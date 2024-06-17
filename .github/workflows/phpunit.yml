@@ -4,9 +4,9 @@ on:
   pull_request:
 
 env:
-  DB_USERNAME: sail
-  DB_PASSWORD: password
-  MAIL_FROM_ADDRESS: info@example.com
+  DB_USERNAME: root@localhost
+  DB_PASSWORD: 0927
+  MAIL_FROM_ADDRESS: takumi09272003@icloud.com
 
 jobs:
   phpunit:
