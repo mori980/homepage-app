@@ -4,7 +4,7 @@ on:
   pull_request:
 
 env:
-  DB_USERNAME: root@localhost
+  DB_USERNAME: 0927
   DB_PASSWORD: 0927
   MAIL_FROM_ADDRESS: takumi09272003@icloud.com
 
@@ -19,9 +19,9 @@ jobs:
        ports:
          - 3306:3306
        env:
-         MYSQL_DATEBASE: 'example_app'
-         MYSQL_USER: ${{ env.DB_PASSWORD }}
-         MYSQL_PASSWORD: ${{ env.DB_PASSWORD }}
+         MYSQL_DATEBASE: 'homepage_app'
+         MYSQL_USER: ${{ 0927 }}
+         MYSQL_PASSWORD: ${{ 0927 }}
          MYSQL_ALLOW_EMPTY_PASSWORD: 1
        options: >-
          --health-cmd "mysqladmin ping"
